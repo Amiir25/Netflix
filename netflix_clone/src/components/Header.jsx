@@ -1,12 +1,11 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { assets } from '../assets/assets';
 
 const Header = () => {
     return (
         <>
-            <header className="w-full h-[90vh] md:min-h-screen text-white flex flex-col 
-            bg-[url('./img/background.png')] bg-cover bg-center bg-no-repeat">
+            <header className="w-full h-[90vh] md:min-h-screen text-white flex flex-col"
+            style={{backgroundImage: "url('/background.png')"}}>
                 <div id="header-wrapper" className="relative flex-1 bg-[rgba(0,0,0,0.8)]">
                     {/* ------------ Navbar ------------ */}
                     <Navbar />
