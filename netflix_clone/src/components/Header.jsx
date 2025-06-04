@@ -1,5 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
@@ -32,7 +34,7 @@ const Header = () => {
                             <button id="get-started-btn" className="text-md md:text-2xl font-semibold bg-[#e50914] px-7 py-3 mx-auto md:mx-2
                         my-3 rounded hover:bg-red-700">
                                 Get Started
-                                <i className="fa-solid fa-chevron-right mx-2"></i>
+                                <FontAwesomeIcon icon={faChevronRight} className='mx-2'/>
                             </button>
                         </div>
                     </div>
