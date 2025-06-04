@@ -1,4 +1,5 @@
 import React from "react";
+import { assets, movies } from "../assets/assets";
 import HorizontalLine from "./HorizontalLine";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
@@ -18,26 +19,28 @@ const TrendingNow = () => {
                 <div id="movie-wrapper" className="border border-whie relative w-full h-40 md:h-56 lg:h-68 flex items-center">
                     {/* Left button */}
                     <div className="absolute -left-1 bg-black px-2 h-full flex items-center justify-center z-10">
-                        <button className=" text-white bg-gray-900 px-0.2 py-8 rounded">
-                            <FontAwesomeIcon icon={faChevronLeft} />
+                        <button className=" text-white bg-gray-900 px-0.2 py-8 px-2 rounded">
+                            <FontAwesomeIcon icon={faChevronLeft} className="md:text-2xl" />
                         </button>
                     </div>
                     {/* right button  */}
                     <div className="absolute -right-1 bg-black px-2 h-full flex items-center justify-center z-10">
-                        <button className="text-white bg-gray-900 px-0.2 py-8 rounded">
-                            <FontAwesomeIcon icon={faChevronRight}/>
+                        <button className="text-white bg-gray-900 px-0.2 py-8 px-2 rounded">
+                            <FontAwesomeIcon icon={faChevronRight} className="md:text-2xl" />
                         </button>
                     </div>
+                    
                     {/* Movies */}
-                    <div id="movies" className="w-full h-full overflow-x-auto overflow-y-hidden whitespace-nowrap">
-                        <div className="relative inline-block w-24 md:w-38 lg:w-48 h-full mx-1 md:mx-2 lg:mx-4
-                    bg-[url('./img/spy.webp')] bg-cover bg-center bg-no-repeat rounded-lg">
-                            <h1 className="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
-                        </div>
-                        <div className="relative inline-block w-24 md:w-38 lg:w-48 h-full mx-1 md:mx-2 lg:mx-4 
-                    bg-[url('./img/prison-break.webp')] bg-cover bg-center bg-no-repeat rounded-lg">
-                            <h1 className="absolute -left-4 top-1/2 transform -translate-y-1/2 text-white text-7xl">1</h1>
-                        </div>
+                    <div id="movies" className="w-full h-full overflow-x-auto overflow-y-hidden scrollbar-hide whitespace-nowrap">
+                        {
+                            movies.map((movie) => (
+                                <div className="relative inline-block w-24 md:w-38 lg:w-48 h-full mx-1 md:mx-2 lg:mx-3
+                                    bg-cover bg-center rounded-lg"
+                                    style={{backgroundImage: `url(${movie.image})`}}>
+                                    <h1 className="absolute -left-2 top-1/2 text-white text-4xl lg:text-7xl font-bold">{movie.id}</h1>
+                                </div>
+                            ))
+                        }
                     </div>
                 </div> {/*  movie-wrapper */}
             </div>{/* trending-now */}
