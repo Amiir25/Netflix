@@ -56,11 +56,19 @@ const TrendingNow = () => {
                                 key={movie.id}
                                 className="relative inline-block w-20 md:w-32 lg:w-42 h-full mx-3 md:mx-4 lg:mx-5 py-3">
 
+                                    {/* Logo */}
+                                    <img 
+                                    src="/logo.png"
+                                    alt="Netflix Logo"
+                                    className="w-1 md:w-3 absolute top-5 left-1 md:left-2"/>
+
+                                    {/* Movie */}
                                     <img 
                                     src={movie.image} 
                                     alt={movie.title}
                                     className="max-w-full h-full rounded-lg hover:scale-110 transition-transform duration-300"/>
 
+                                    {/* ID */}
                                     <h1 className="absolute top-1/2 -left-3 md:-left-4 lg:-left-6 text-stroke-white
                                     text-black text-5xl md:text-6xl lg:text-8xl font-black">
                                         {movie.id}
