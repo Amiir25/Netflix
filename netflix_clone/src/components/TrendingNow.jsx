@@ -37,7 +37,7 @@ const TrendingNow = () => {
                                 <div className="relative inline-block w-24 md:w-38 lg:w-48 h-full mx-1 md:mx-2 lg:mx-3
                                     bg-cover bg-center rounded-lg"
                                     style={{backgroundImage: `url(${movie.image})`}}>
-                                    <h1 className="absolute -left-2 top-1/2 text-white text-4xl lg:text-7xl font-bold">{movie.id}</h1>
+                                    <h1 className="absolute -left-2 md:-left-3 lg:-left-4 top-1/2 text-white text-5xl md:text-6xl lg:text-7xl font-bold">{movie.id}</h1>
                                 </div>
                             ))
                         }
