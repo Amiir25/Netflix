@@ -58,9 +58,9 @@ const TrendingNow = () => {
                     <div 
                     onClick={scrollLeft}
                     className={`absolute ${showLeftButton ? '-left-1' : '-left-10 opacity-0'} 
-                    transition-all duration-300 ease-in-out bg-black px-2 h-full
+                    transition-all duration-300 ease-in-out bg-black px-1 md:px-2 h-full
                     flex items-center justify-center z-10 behavior-smooth`}>
-                        <button className=" text-white bg-gray-900 px-0.2 py-8 px-2 rounded">
+                        <button className=" text-white bg-gray-900 px-1 md:px-2 py-8 rounded">
                             <FontAwesomeIcon icon={faChevronLeft} className="md:text-2xl" />
                         </button>
                     </div>
@@ -69,9 +69,9 @@ const TrendingNow = () => {
                     <div
                     onClick={scrollRight}
                     className={`absolute ${showRightButton ? '-right-1' : '-right-10 opacity-0'}
-                    transition-all duration-300 ease-in-out bg-black px-2 h-full
+                    transition-all duration-300 ease-in-out bg-black px-1 md:px-2 h-full
                     flex items-center justify-center z-10`}>
-                        <button className="text-white bg-gray-900 px-0.2 py-8 px-2 rounded">
+                        <button className="text-white bg-gray-900 px-1 md:px-2 py-8 rounded">
                             <FontAwesomeIcon icon={faChevronRight} className="md:text-2xl" />
                         </button>
                     </div>
