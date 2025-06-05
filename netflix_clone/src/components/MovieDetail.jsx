@@ -9,7 +9,7 @@ const MovieDetail = () => {
             <div className='w-full h-full fixed top-0 left-0 z-10 bg-[rgba(0,0,0,0.6)]'></div>
 
             {/* Movie detail */}
-            <div className='bg-black border border-amber-50 w-full min-[620px]:w-xl
+            <div className='bg-black w-full min-[620px]:w-xl border border-gray-600 rounded-lg
             fixed top-1/2 left-1/2 transform -translate-1/2 z-20'>
 
                 {/* Close Icon */}
@@ -23,19 +23,19 @@ const MovieDetail = () => {
                 </div>
 
                 {/* Description */}
-                <div className='text-white'>
+                <div className='text-white px-4'>
                     <h2>CRIMINAL CODE</h2>
                     <div>
-                        <span className="mx-2">2025</span>
-                        <span className="mx-2">18+</span>
-                        <span className="mx-2">Show</span>
-                        <span className="mx-2">Action</span>
-                        <span className="mx-2">Dramas</span>
+                        <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">2025</span>
+                        <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">18+</span>
+                        <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">Show</span>
+                        <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">Action</span>
+                        <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">Dramas</span>
                     </div>
-                    <p>
+                    <p className='text-sm md:text-md my-4'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores asperiores distinctio quae accusamus, perferendis natus quam dicta placeat. Impedit, fugiat.
                     </p>
-                    <button className="text-md md:text-2xl font-semibold bg-[#e50914] px-7 py-3 mx-auto md:mx-2 my-3 rounded hover:bg-red-700">
+                    <button className="w-full min-[620px]:w-1/3 text-md md:text-lg font-semibold bg-[#e50914] px-7 py-3 my-3 rounded hover:bg-red-700">
                         Get Started
                         <FontAwesomeIcon icon={faChevronRight} className='mx-2' />
                     </button>
