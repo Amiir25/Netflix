@@ -16,9 +16,11 @@ const MovieDetail = () => {
                 {/* Image */}
                 <div className="relative bg-cover bg-center w-full h-54 md:h-62 lg:h-80"
                     style={{ backgroundImage: "url('/background.png')" }}>
+                    
                     {/* Close Icon */}
                     <FontAwesomeIcon icon={faXmark} className='float-right text-white text-3xl m-4 p-1 w-[28px] h-[28px] rounded-full 
                     hover:bg-[rgba(200,200,200,0.4)] transition-all duration-200'/>
+                    
                     {/* Overlays for shadows */}
                     <div className='w-full h-full bg-gradient-to-b from-transparent via-black/20 to-black'></div>
                     <div className='absolute bottom-0 left-0 w-1/2 h-full bg-[linear-gradient(45deg,_rgba(0,0,0,1),_rgba(0,0,0,0.9),_transparent_65%)]'></div>
