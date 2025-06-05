@@ -7,7 +7,7 @@ const MovieDetail = () => {
         <div className='w-full h-full fixed top-0 left-0 z-10 bg-[rgba(0,0,0,0.6)]'></div>
 
         {/* Movie detail */}
-        <div className='border border-amber-50 w-full md:w-xl h-100 md:h-132
+        <div className='border border-amber-50 w-full min-[620px]:w-xl h-100 min-[620px]:h-132
         fixed top-1/2 left-1/2 transform -translate-1/2 z-20'>
 
             {/* Close Icon */}
