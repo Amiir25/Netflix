@@ -28,7 +28,7 @@ const MovieDetail = () => {
 
                 {/* Description */}
                 <div className='text-white px-4'>
-                    <h2>CRIMINAL CODE</h2>
+                    <h2 className='mb-2'>CRIMINAL CODE</h2>
                     <div>
                         <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">2025</span>
                         <span className="me-2 text-xs md:text-sm bg-gray-500 px-2 py-0.5 rounded">18+</span>
