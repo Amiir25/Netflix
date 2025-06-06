@@ -42,13 +42,13 @@ const TrendingNow = () => {
         setShowRightButton(el.scrollLeft + el.clientWidth < el.scrollWidth);
     }
 
-    // Call movie details
-    let [state, setState] = useState({id: 0});
-
-    const movieDetail = (Id) => {
-        setState((state) => ({id: Id}))
-        alert(state);
+    // Update the state by the Id of the selected movie
+    let [selectedMovie, setSelectedMovie] = useState(null);
+    const updateSelectedMovie = (movieId) => {
+        setSelectedMovie(movieId)
     }
+    // Call MovieDetail component on click
+    selectedMovie && alert(selectedMovie) //<MovieDetail selectedMovie={selectedMovie}/>
 
     return (
         <>
@@ -95,7 +95,7 @@ const TrendingNow = () => {
                             movies.map((movie) => (
                                 <div 
                                 key={movie.id}
-                                onClick={() => movieDetail(movie.id)}
+                                onClick={() => updateSelectedMovie(movie.id)}
                                 className="relative inline-block w-20 md:w-32 lg:w-42 h-full mx-3 md:mx-4 lg:mx-5 py-3">
 
                                     {/* Logo */}
