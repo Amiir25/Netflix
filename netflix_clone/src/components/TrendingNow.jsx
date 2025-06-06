@@ -4,6 +4,7 @@ import HorizontalLine from "./HorizontalLine";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import MovieDetail from "./MovieDetail";
 
 
 const TrendingNow = () => {
@@ -39,6 +40,14 @@ const TrendingNow = () => {
         // Update the states
         setShowLeftButton(el.scrollLeft > 0);
         setShowRightButton(el.scrollLeft + el.clientWidth < el.scrollWidth);
+    }
+
+    // Call movie details
+    let [state, setState] = useState({id: 0});
+
+    const movieDetail = (Id) => {
+        setState((state) => ({id: Id}))
+        alert(state);
     }
 
     return (
@@ -86,6 +95,7 @@ const TrendingNow = () => {
                             movies.map((movie) => (
                                 <div 
                                 key={movie.id}
+                                onClick={() => movieDetail(movie.id)}
                                 className="relative inline-block w-20 md:w-32 lg:w-42 h-full mx-3 md:mx-4 lg:mx-5 py-3">
 
                                     {/* Logo */}
