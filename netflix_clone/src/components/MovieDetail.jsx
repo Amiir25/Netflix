@@ -2,8 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { assets, movies } from '../assets/assets';
 
-const MovieDetail = () => {
+const MovieDetail = (props) => {
+
+    const selectedMovie = movies.find(movie => movie.id === props.movieId);
+    alert(props);
+    // alert(selectedMovie);
+
     return (
         <>
             {/* Overlay */}
