@@ -6,8 +6,6 @@ import { assets, movies } from '../assets/assets';
 
 const MovieDetail = (props) => {
 
-    
-    // alert(props.selectedMovie);
     return (
         <>
             {/* Overlay */}
