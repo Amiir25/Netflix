@@ -95,7 +95,7 @@ const TrendingNow = () => {
                             movies.map((movie) => (
                                 <div
                                     key={movie.id}
-                                    onClick={() => updateSelectedMovie(movie.id)}
+                                    
                                     className="relative inline-block w-20 md:w-32 lg:w-42 h-full mx-3 md:mx-4 lg:mx-5 py-3">
 
                                     {/* Logo */}
@@ -108,6 +108,7 @@ const TrendingNow = () => {
                                     <img
                                         src={movie.image}
                                         alt={movie.title}
+                                        onClick={() => updateSelectedMovie(movie.id)}
                                         className="max-w-full h-full rounded-lg hover:scale-110 transition-transform duration-300" />
 
                                     {/* ID */}
@@ -119,14 +120,6 @@ const TrendingNow = () => {
                                 </div>
                             ))
                         }
-
-                        {
-                            
-
-                        // Call MovieDetail component on click
-                        selectedMovie && alert(selectedMovie) // <MovieDetail selectedMovie={selectedMovie} />
-                        }
-
                     </div>
                 </div> {/*  movie-wrapper */}
             </div>{/* trending-now */}
