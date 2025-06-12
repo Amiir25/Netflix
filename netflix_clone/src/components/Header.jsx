@@ -10,7 +10,7 @@ const Header = () => {
             style={{backgroundImage: "url('/background.png')"}}>
                 <div id="header-wrapper" className="relative flex-1 bg-[rgba(0,0,0,0.8)]">
 
-                    {/* ------------ Navbar ------------ */}
+                    {/* ------------ Navbar ---------- */}
                     <Navbar />
 
                     {/* ------------ Hero ------------ */}
